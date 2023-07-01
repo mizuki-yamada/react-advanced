@@ -1,4 +1,3 @@
-import logo from './logo.svg';
 import './App.css';
 import { useState } from 'react';
 import { ChildArea } from './components/ChildArea';
@@ -10,6 +9,10 @@ function App() {
 
   const changeIsShowingFlag = () => {
     return setIsShowing(!isShowing)
+  }
+
+  const onClickClose = () => {
+     return setIsShowing(false)
   }
   
   return (
@@ -25,7 +28,7 @@ function App() {
       <br></br>
       <button onClick={changeIsShowingFlag}>表示</button>
       <br></br>
-      <ChildArea open={isShowing}></ChildArea>
+      <ChildArea open={isShowing} onClose={onClickClose}></ChildArea>
     </div>
   );
 }
