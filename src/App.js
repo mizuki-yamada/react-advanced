@@ -1,7 +1,7 @@
 import './App.css';
-import { Home } from './Home';
-import { Page1 } from './Page1';
-import { Page2 } from './Page2';
+import { Home } from './pages/Home';
+import { Page1 } from './pages/Page1';
+import { Page2 } from './pages/Page2';
 
 function App() {
   
