@@ -1,13 +1,16 @@
 import './App.css';
-import { InlineStyle } from './components/InlineStyle';
-import { CssModules } from './components/CssModules';
+import { Home } from './Home';
+import { Page1 } from './Page1';
+import { Page2 } from './Page2';
 
 function App() {
   
   return (
     <div className="App">
-      <InlineStyle></InlineStyle>
-      <CssModules></CssModules>
+      <Home></Home>
+      <Page1></Page1>
+      <Page2></Page2>
+
     </div>
   );
 }
